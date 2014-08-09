@@ -1,0 +1,56 @@
+<html>
+<body bgcolor=#ccffcc text=green>
+<h1><center>student information..</h1></center><h3><hr><br>
+<form method=post  action="http://localhost:8080/ServletsApp/ourservlet5" >
+Enter student number :<input type=text name=sno size=6  ><br><br>
+Enter student name :<input type=text name=sname size=40><br><br>
+Enter student marks :<input type=password  name=marks maxlength=4><br><br>
+<input type=hidden name=fee value=10000 >
+Student Gender :
+  <input type=radio  name=gender value=male > Male
+  <input type=radio name=gender  value=female> Female
+<br><br>
+Student Qualification :
+ <input type=radio  name=qualification  value=msc>msc
+ <input type=radio  name=qualification  value=mca >mca
+ <input type=radio  name=qualification  value=mba>mba
+ <input type=radio  name=qualification  value="B.Tech">B.Tech
+ <input type=radio  name=qualification  value="M.Tech" checked>M.Tech
+<br><br>
+Known Languages :
+<input type=checkbox  name=languages value=Telugu>Telugu
+<input type=checkbox  name=languages value=Hindi>Hindi
+<input type=checkbox  name=languages value=English>English
+<input type=checkbox  name=languages value=Urdu>Urdu
+<br><br>
+He/She inspired by :
+<select name=person>
+   <option value="chariji" selected>my spiritual guru
+   <option value="Swami Vivekananda">Swami Vivekananda
+   <option value="Mahatma Gandhi">Mahatma Gandhi
+   <option value="Mother Teresa" >Mother Teresa
+   <option value="Abdul Kalam" >Abdul Kalam
+   <option value="James Gosling"> James Gosling
+</select>
+<br><br>
+ Software Courses :
+<select name=courses  size=5  multiple>
+  <option value=java selected>java</option>
+  <option value=j2ee>j2ee</option>
+  <option value=j2me>j2me</option>
+  <option value=oracle>oracle
+  <option value="asp.net">asp.net
+  <option value="dba">dba
+  <option value="testing tools" >testing tools
+  <option value="vc++" >vc++
+  <option value="c++">c++
+</select>
+<br><br>
+StudentAddress :
+<textarea  name=address rows=6 cols=50 >USA</textarea>
+<br><br>
+<input type=submit  value="send" >
+<input type=reset  value="default" >
+</form>
+</body>
+</html>

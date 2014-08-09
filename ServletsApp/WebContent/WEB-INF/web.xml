@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+   version="2.5">
+<context-param>
+	<param-name>driver</param-name>
+	<param-value>org.gjt.mm.mysql.Driver</param-value>
+   </context-param>
+   <context-param>
+	<param-name>url</param-name>
+	<param-value>jdbc:mysql://localhost:3306/demodb</param-value>
+   </context-param>
+   <context-param>
+	<param-name>username</param-name>
+	<param-value>root</param-value>
+   </context-param>
+   <context-param>
+	<param-name>password</param-name>
+	<param-value>root123</param-value>
+   </context-param>
+ <listener>
+	<listener-class>demolisteners.ourcontextlistener</listener-class>
+     </listener>
+  <listener>
+	<listener-class>demolisteners.oursessionlistener</listener-class>
+     </listener>
+<listener>
+	<listener-class>demolisteners.ourrequestlistener</listener-class>
+     </listener>
+     <servlet>
+	<servlet-name>servlet1</servlet-name>
+	<servlet-class>serv1</servlet-class>
+     </servlet>
+     <servlet-mapping>
+	<servlet-name>servlet1</servlet-name>
+	<url-pattern>/ourservlet1</url-pattern>
+     </servlet-mapping>
+    <servlet>
+	<servlet-name>servlet2</servlet-name>
+	<servlet-class>demoservlets.serv2</servlet-class>
+     </servlet>
+     <servlet-mapping>
+	<servlet-name>servlet2</servlet-name>
+	<url-pattern>/ourservlet2</url-pattern>
+     </servlet-mapping>
+     <servlet-mapping>
+	<servlet-name>servlet2</servlet-name>
+	<url-pattern>/myservlet2</url-pattern>
+     </servlet-mapping>
+     <servlet>
+	<servlet-name>servlet3</servlet-name>
+	<servlet-class>demoservlets.serv3</servlet-class>
+     </servlet>
+     <servlet-mapping>
+	<servlet-name>servlet3</servlet-name>
+	<url-pattern>/ourservlet3</url-pattern>
+     </servlet-mapping>
+     <servlet>
+	<servlet-name>servlet4</servlet-name>
+	<servlet-class>demoservlets.serv4</servlet-class>
+     </servlet>
+     <servlet-mapping>
+	<servlet-name>servlet4</servlet-name>
+	<url-pattern>/ourservlet4</url-pattern>
+     </servlet-mapping>
+<servlet>
+	<servlet-name>servlet5</servlet-name>
+	<servlet-class>demoservlets.serv5</servlet-class>
+     </servlet>
+     <servlet-mapping>
+	<servlet-name>servlet5</servlet-name>
+	<url-pattern>/ourservlet5</url-pattern>
+     </servlet-mapping>
+<servlet>
+	<servlet-name>servlet6</servlet-name>
+	<servlet-class>demoservlets.serv6</servlet-class>
+	<init-param>
+		<param-name>location</param-name>
+		<param-value>PIS</param-value>
+	</init-param>
+	<init-param>
+		<param-name>topic</param-name>
+		<param-value>servlets</param-value>
+	</init-param>
+	<init-param>
+		<param-name>server</param-name>
+		<param-value>apache tomcat</param-value>
+	</init-param>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>servlet6</servlet-name>
+	<url-pattern>/ourservlet6</url-pattern>
+  </servlet-mapping>
+<servlet>
+	<servlet-name>servlet7</servlet-name>
+	<servlet-class>demoservlets.serv7</servlet-class>
+     </servlet>
+     <servlet-mapping>
+	<servlet-name>servlet7</servlet-name>
+	<url-pattern>/ourservlet7</url-pattern>
+     </servlet-mapping>
+<servlet>
+	<servlet-name>servlet8</servlet-name>
+	<servlet-class>demoservlets.serv8</servlet-class>
+     </servlet>
+     <servlet-mapping>
+	<servlet-name>servlet8</servlet-name>
+	<url-pattern>/ourservlet8</url-pattern>
+     </servlet-mapping>
+<servlet>
+	<servlet-name>servlet9</servlet-name>
+	<servlet-class>demoservlets.serv9</servlet-class>
+     </servlet>
+     <servlet-mapping>
+	<servlet-name>servlet9</servlet-name>
+	<url-pattern>/ourservlet9</url-pattern>
+     </servlet-mapping>
+    <servlet>
+	<servlet-name>servlet10</servlet-name>
+	<servlet-class>demoservlets.serv10</servlet-class>
+     </servlet>
+     <servlet-mapping>
+	<servlet-name>servlet10</servlet-name>
+	<url-pattern>/ourservlet10</url-pattern>
+     </servlet-mapping>
+ <servlet>
+	<servlet-name>servlet11</servlet-name>
+	<servlet-class>demoservlets.serv11</servlet-class>
+     </servlet>
+     <servlet-mapping>
+	<servlet-name>servlet11</servlet-name>
+	<url-pattern>/ourservlet11</url-pattern>
+     </servlet-mapping>
+<servlet>
+	<servlet-name>servlet12</servlet-name>
+	<servlet-class>demoservlets.serv12</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>servlet12</servlet-name>
+	<url-pattern>/ourservlet12</url-pattern>
+  </servlet-mapping>
+<servlet>
+	<servlet-name>servlet13</servlet-name>
+	<servlet-class>demoservlets.serv13</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>servlet13</servlet-name>
+	<url-pattern>/ourservlet13</url-pattern>
+  </servlet-mapping>
+<servlet>
+	<servlet-name>servlet14</servlet-name>
+	<servlet-class>demoservlets.serv14</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>servlet14</servlet-name>
+	<url-pattern>/ourservlet14</url-pattern>
+  </servlet-mapping>
+<servlet>
+	<servlet-name>servlet15</servlet-name>
+	<servlet-class>demoservlets.serv15</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>servlet15</servlet-name>
+	<url-pattern>/ourservlet15</url-pattern>
+  </servlet-mapping>
+<servlet>
+	<servlet-name>servlet16</servlet-name>
+	<servlet-class>demoservlets.serv16</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>servlet16</servlet-name>
+	<url-pattern>/ourservlet16</url-pattern>
+  </servlet-mapping>
+<servlet>
+	<servlet-name>servlet17</servlet-name>
+	<servlet-class>demoservlets.serv17</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>servlet17</servlet-name>
+	<url-pattern>/ourservlet17</url-pattern>
+  </servlet-mapping>
+<servlet>
+	<servlet-name>servlet18</servlet-name>
+	<servlet-class>demoservlets.serv18</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>servlet18</servlet-name>
+	<url-pattern>/ourservlet18</url-pattern>
+  </servlet-mapping>
+<servlet>
+	<servlet-name>servlet19</servlet-name>
+	<servlet-class>demoservlets.serv19</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>servlet19</servlet-name>
+	<url-pattern>/ourservlet19</url-pattern>
+  </servlet-mapping>
+<servlet>
+	<servlet-name>servlet20</servlet-name>
+	<servlet-class>demoservlets.serv20</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>servlet20</servlet-name>
+	<url-pattern>/ourservlet20</url-pattern>
+  </servlet-mapping>
+<servlet>
+	<servlet-name>demoservlet</servlet-name>
+	<servlet-class>demoservlets.demoserv</servlet-class>
+  </servlet>
+ <servlet-mapping>
+	<servlet-name>demoservlet</servlet-name>
+	<url-pattern>/ourdemoservlet</url-pattern>
+  </servlet-mapping>
+  <session-config>
+	<session-timeout>60</session-timeout>
+  </session-config>
+</web-app>
